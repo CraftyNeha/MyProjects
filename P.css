@@ -1,0 +1,370 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:"poppins";
+}
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( to top, #000000cc 0, #00000078 60%, #000000cc 100%), url(./Images/1_5lyavS59mazOFnb55Z6znQ.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10%;
+    position:relative;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 9px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.dropdown .option{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 12px;
+}
+.dropdown{
+    font-size: 15px;
+}
+.sign-btn:hover{
+    background-color: #c01010;
+}
+.sign-btn{
+    transition: background-color 0.3s ease-out;
+}
+.header-content{
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    
+}
+.header-content h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 800;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.header-content h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 6000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.header-content p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.email-box{
+    background: #00000067;
+    border-radius: 4px;
+    border: 1px solid #979797;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    overflow: hidden;
+    max-width: 650px;
+
+}
+.email-box input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.email-box input::placeholder{
+    color: #ffffffb9;
+}
+.email-box button{
+    background: #c01010;
+    border: 0;
+    outline:0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 18px 30px;
+}
+.get-started:hover{
+    background-color: #c01010;
+}
+.get-started{
+    transition: background-color 0.3s ease-in;
+}
+.trending{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.dropdown{
+    background: transparent;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+
+    
+    
+}
+.card1{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-left: 20px
+    
+
+}
+.option{
+   color: black;
+   background-color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: 600;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.questions{
+    margin: 60px auto;
+    width:100%;
+    max-width: 750px;
+
+}
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.questions li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 15px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.questions .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s padding 0.5s;
+}
+.questions input[type="radio"]:checked + label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.question input[type="radio"]:checked + label::after{
+    transform: rotate(135);
+}
+.faq .email-box{
+    max-width: 600px;
+    margin:20px auto 60px ;  
+}
+.faq small{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+    padding: 50px 15% 10px;
+    border-top: 4px solid grey;
+    color: rgb(203, 203, 219);
+}
+footer h2{
+    font-size:18px ;
+    font-weight: 400;
+    margin-bottom: 30px;
+    
+
+}
+footer .column{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+footer .column a{
+    display:block;
+    text-decoration: underline;
+    color: rgb(203, 203, 219);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+footer .row{
+    align-items:flex-start;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.scroll-container {
+    background-color: black;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  div.scroll-container img {
+    padding: 15px;
+    height: 300px;
+    width: 220px;
+    transition: 150ms;
+    cursor: pointer;
+  }
+  div.scroll-container img:hover{
+    filter:drop-shadow(2);
+    transform: scale(1.2);
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  .border_box{
+    box-sizing: border-box;
+  }
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  .row {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    background-color: lightpink;
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(122, 44, 168) , rgb(97, 26, 76));
+  }
+  .card img{
+    height: 120px;
+    width: 100px;
+  }
+  .card h3{
+    font-size:20px ;
+    font-weight: 6000;
+    margin-bottom: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  .card p{
+    font-size:18px ;
+    font-weight: 300;
+    margin-top: 30px;
+    color: #d7d7d7;
+  }
+  footer .dropdown{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .copyright-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  @media only screen and (max-width:600px){
+    .logo{
+        width:100px;
+    }
+    nav button{
+        padding:5px 10px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 100px;
+    }
+    .header-content h1{
+        font-size: 30px;
+        line-height:1.4;
+    }
+    .email-box button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .question.content{
+        font-size: 14px;
+    }
+    .question li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+    label::after{
+        font-size: 22px;
+    }
+  }
